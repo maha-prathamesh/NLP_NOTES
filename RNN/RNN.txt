@@ -1,0 +1,22 @@
+Y not CNN / RNN comes in picture?
+	- No memory element.
+	- Present data is not dependent on previous data.
+
+speech,audio,text
+	
+RNN:
+Types:
+	1) seq to seq
+	2) seq to vector [Sentiment analysis]
+	3) vector to sequence [Image captioning]
+	4) ennoder and decoder [Language translation]
+https://www.simplilearn.com/tutorials/deep-learning-tutorial/rnn#:~:text=1%20One%20to%20One%20RNN.%20This%20type%20of,outputs.%20Machine%20translation%20is%20one%20of%20the%20examples.
+
+
+
+
+How to solve:
+1) Unroll input sequence over time.
+2) Create copy of RNN for each input.
+3) Calculate derivative for each copy seperatly.
+4) Roll them back by summing up the gradient back to candidate weight update.
